@@ -1,0 +1,51 @@
+input.copyText {
+    opacity: 0;
+    height: 0;
+}
+
+button.copyButton {
+    position: inherit;
+    padding: 0;
+    border: none;
+    background: transparent;
+    width: 32px;
+    height: 39px;
+    padding-left: 15px;
+    z-index: 500;
+    opacity: 0.7;
+}
+
+button.copyButton:focus {
+    outline:0;
+}
+
+button.copyButton:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+button.copyButton img {
+    display: block;
+    width: 28px;
+    height: 35px;
+}
+
+#tooltip {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    z-index: 500;
+}
+
+.results {
+    background-color: #f1f1f1;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+
+.results a {
+    color: #000;
+}
