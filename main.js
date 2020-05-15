@@ -75,9 +75,9 @@ const generateTagText = () => {
         const tagId = tag.getAttribute('name');
         switch(tag.tagName) {
             case 'H3':
-                return `・<a href='#${tagId}'>${tag.textContent}</a>`
+                return `−&nbsp;<a href='#${tagId}'>${tag.textContent}</a>`
             case 'H4':
-                return `　・<a href='#${tagId}'>${tag.textContent}</a>`
+                return `−−&nbsp;<a href='#${tagId}'>${tag.textContent}</a>`
             default:
                 return ''
         }

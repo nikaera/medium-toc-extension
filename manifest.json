@@ -1,6 +1,6 @@
 {
   "name": "TOC of Medium",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 2,
   "description": "Create a table of contents on the edit screen of Medium.",
   "web_accessible_resources": [
