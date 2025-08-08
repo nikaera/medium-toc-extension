@@ -33,7 +33,7 @@ try {
     }
 
     const copyButtonImage = document.createElement('img');
-    copyButtonImage.src = chrome.extension.getURL('images/buttonIcon.png');
+    copyButtonImage.src = chrome.runtime.getURL('images/buttonIcon.png');
     copyButton.appendChild(copyButtonImage);
 
     const navBarButton = document.createElement('div');

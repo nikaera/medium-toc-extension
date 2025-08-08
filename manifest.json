@@ -1,23 +1,27 @@
 {
   "name": "TOC of Medium",
   "version": "1.0.3",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "Create a table of contents on the edit screen of Medium.",
   "web_accessible_resources": [
-    "images/buttonIcon.png"
+    {
+      "resources": ["images/buttonIcon.png"],
+      "matches": ["https://medium.com/*"]
+    }
   ],
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
-  "permissions": [
+  "permissions": [],
+  "host_permissions": [
     "https://medium.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://medium.com/p/*"
+        "https://medium.com/**/*/edit"
       ],
       "css": [
         "stylesheets/style.css"

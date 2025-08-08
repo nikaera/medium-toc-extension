@@ -11,7 +11,7 @@ const sourcemaps = require('gulp-sourcemaps')
 const uglify = require('gulp-uglify')
 
 gulp.task('build', function (done) {
-    gulp.src('images/**').pipe(gulp.dest('./dist/images/'));
+    gulp.src('images/**', { encoding: false }).pipe(gulp.dest('./dist/images/'));
     gulp.src('stylesheets/**').pipe(gulp.dest('./dist/stylesheets/'))
     gulp.src('manifest.json').pipe(gulp.dest('./dist/'));
 
